@@ -22,5 +22,9 @@ describe "palindrome?" do
 		expect(palindrome?("x13 4 &#& 4 31x")).to eq true 
 	end
 
+	it "returns 'false' for 'xyzabccbzzyx'" do
+		expect(palindrome?("xyzabccbzzyx")).to eq false
+	end
+
 end
 

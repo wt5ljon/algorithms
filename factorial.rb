@@ -1,19 +1,19 @@
 # non-recursive method to calculate factorial
-def factorial1(number)
+def factorial1(n)
 	result = 1
-  while (number > 0) do
-		result *= number
-		number -= 1
+  while (n > 0) do
+		result *= n
+		n -= 1
 	end
 	result
 end
 
 # recursive method to calculate factorial
-def factorial(number)
-	if (number == 0)
-		return 1
+def factorial(n)
+	if n == 0
+		1
 	else
-		return number * factorial(number-1)
+		n * factorial(n-1)
 	end
 end
 
